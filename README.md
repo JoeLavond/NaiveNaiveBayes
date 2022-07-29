@@ -3,6 +3,7 @@ PyTorch semi-supervised implementation of Naive Bayes additionally assuming full
 
 ### Model Derivations
 See below for the derivation of the model.
+
 $$
 \begin{align}
     P(Y = c \mid X = x) &= \dfrac{P(Y = c \cap X = x)}{P(X = x)} \\
@@ -19,6 +20,7 @@ Note the following implementation details if only using one-hot encoded vectors
 
 Interpretability: Model coeficients are all very meaningful! \n
 Notice that each term in the product indicated the ratio of the change in the belief $Y = c$ given that we now observe $X_i = x_i$.
+
 $$ 
 \begin{align}
     \dfrac{P(Y = c \mid X_i = x_i)}{P(Y = c)} &= P(Y = c \mid X_i = x_i) * \dfrac{1}{P(Y = c)} \\
