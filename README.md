@@ -18,7 +18,8 @@ Note the following implementation details if only using one-hot encoded vectors
 1. All model coeficients can be quickly computed from weighted column averages
 2. Predictions for new data points require only a cumulative product of masked model coeficients
 
-Interpretability: Model coeficients are all very meaningful! \n
+Interpretability: Model coeficients are all very meaningful!
+
 Notice that each term in the product indicated the ratio of the change in the belief $Y = c$ given that we now observe $X_i = x_i$.
 
 $$ 
